@@ -16,4 +16,5 @@ my_dict['c'] = 'three'
 
 print(my_dict['a'])
 
-str = 'sdfgsdfgsdfgkhk'
+str = 'sdfgsdfkkjgsdfgkhk'
+
