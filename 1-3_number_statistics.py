@@ -11,3 +11,6 @@ while a != "q":
 print ("Mean: " + str(statistics.mean(mylist)))
 print ("Median: " + str(statistics.median(mylist)))
 print ("Standard deviation: " + str(statistics.stdev(mylist)))
+
+# also suggest using 'f' strings
+# print(f"Mean: {statistics.mean(mylist)}")
