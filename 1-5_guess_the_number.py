@@ -5,7 +5,9 @@ import random
 x = 100
 
 a =  random.randrange(1,x,1)
-print("Guess the random integer between 1 and " + str(x) + ". Q exits.")
+# a = random.choice(range(1,101))
+#print("Guess the random integer between 1 and " + str(x) + ". Q exits.")
+print(f"Guess the random integer between 1 and {x}. \'Q\' exits")
 i = 0
 while True:
     while True:
@@ -31,3 +33,34 @@ while True:
     else:
         print("Huh?")
     
+
+# Using try/except yields a slightly shorter, slightly neater
+# program:
+
+# import random
+
+# secret_number = random.choice(range(101))
+
+# guess_counter = 0
+
+# while True:
+#     guess = input("Enter a number or type \'q\' to quit\t")
+#     print(guess)
+#     if guess == 'q':
+#         break
+#     else:
+#         try:
+#             my_guess = int(guess)
+#             guess_counter += 1
+#         except:
+#             print("That's not an Integer! (Whole Number)")
+#             continue
+    
+#     if my_guess == secret_number:
+#         print("You Win!")
+#         print("It took {0} guesses".format(guess_counter))
+#         break
+#     elif my_guess < secret_number:
+#         print("Too low... Try a larger number")
+#     elif my_guess > secret_number:
+#         print("Too high... Try a smaller number")

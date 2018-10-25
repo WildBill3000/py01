@@ -28,3 +28,14 @@ while True:
 print("\n")
 for i in demo_dict:
     print(i + ": " + demo_dict[i])
+
+
+# Python code often idiomatically uses the "beg forgiveness" approach 
+# rather than the "ask permission" approach. So you'll see try/except used 
+# instead of guarding "if" conditions
+
+# try:
+#     age = int(age_input) # raises exception if not numeric
+#     demo_dict["Age"] = age
+# except ValueError:
+#     print("I was expecting a number. Try again.")
